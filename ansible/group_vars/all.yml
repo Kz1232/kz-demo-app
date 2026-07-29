@@ -3,7 +3,7 @@
 # these (from repo variables + secrets). The defaults let you run locally by
 # exporting the same variables. One consistent mechanism, no mixed `-e` flags.
 env_name: "{{ lookup('env', 'ENV_NAME') | default('dev', true) }}"
-aws_region: "{{ lookup('env', 'AWS_REGION') | default('us-east-1', true) }}"
+aws_region: "{{ lookup('env', 'AWS_REGION') | default('ap-south-1', true) }}"
 
 # --- Reach the instances over SSH (they have public IPs) --------------------
 # The private key is supplied by the deploy pipeline (--private-key); host key

@@ -13,7 +13,7 @@ terraform {
   backend "s3" {
     bucket       = "golive-tf-state-CHANGEME"
     key          = "kz-demo-app/prod/terraform.tfstate"
-    region       = "us-east-1"
+    region       = "ap-south-1"
     encrypt      = true
     use_lockfile = true # native S3 locking (Terraform 1.10+)
   }

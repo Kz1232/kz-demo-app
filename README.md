@@ -89,7 +89,7 @@ cp -R devops-month/examples/kz-demo-app kz-demo-app && cd kz-demo-app
 - **Secrets and variables → Actions** → add these **repository-level** entries (shared by dev & prod):
 
 ```bash
-gh variable set AWS_REGION   --body "us-east-1"
+gh variable set AWS_REGION   --body "ap-south-1"
 gh variable set AWS_ROLE_ARN --body "arn:aws:iam::<account-id>:role/<oidc-role>"
 gh secret   set SSH_PRIVATE_KEY < kz-demo-app.pem
 gh secret   set DB_USERNAME   --body "appuser"
