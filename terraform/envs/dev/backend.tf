@@ -11,7 +11,7 @@ terraform {
   # Remote state in S3 (reuse the state bucket from Week 3). CI runners are
   # ephemeral, so state MUST be remote. Each env has its own key.
   backend "s3" {
-    bucket       = "golive-tf-state-kshitiz"
+    bucket       = "golive-tf-state-kz"
     key          = "kz-demo-app/dev/terraform.tfstate"
     region       = "ap-south-1"
     encrypt      = true
